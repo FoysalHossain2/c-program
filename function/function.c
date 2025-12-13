@@ -8,9 +8,7 @@ int sum (int num1, int num2)
 
 int main() 
 {   
-    int val = sum(-10,50);
-    int val2 = sum(100, 200);
-    int val3 = sum(2,3);
+    
     printf("%d %d %d", val, val2, val3);
     return 0;
 }

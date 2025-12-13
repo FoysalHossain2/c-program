@@ -6,4 +6,5 @@ int *p;
 p = ary + 3;
 *p = 5;
 printf("%d\n", ary[3]);
+
 }
