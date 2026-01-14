@@ -1,26 +1,34 @@
 #include <stdio.h>
+
+void rec(int n) {
+
+    if (n == 0)
+    {
+        return;
+    }
+    
+    rec(n/10);
+    int last = n%10;
+    printf("%d ", last);
+}
+
 int main()
 {
-    int n,m;
-    scanf("%d %d", &n, &m);
-    int a[n][m];
-
-    for (int i = 0; i < n; i++)
+    int t;
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++)
     {
-        for (int j = 0; j < m; j++)
+        int n;
+        scanf("%d", &n);
+        if (n==0)
         {
-            scanf("%d", &a[i][j]);
+            printf("0");
         }
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = m-1; j >=0; j--)
-        {
-            printf("%d ", a[i][j]);
-        }
+        
+        rec(n);
         printf("\n");
     }
+    
 
     return 0;
     
