@@ -21,6 +21,11 @@ int main()
         printf("\n");
         star += 2;
         space--;
+       
+        if (condition)
+        {
+            /* code */
+        }
         
     }
     
